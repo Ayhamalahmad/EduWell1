@@ -1,0 +1,16 @@
+@use "../helpes/variables" as *;
+@use "../helpes/variables" as *;
+/*Start Components*/ 
+.p-head{
+    text-align: center;
+    padding-top: 60px;
+}
+.h2-head{
+    text-align: center;
+    padding: 20px 0;
+    span{
+        color:$OrchidPink;
+    }
+  
+}
+/*End Components*/ 

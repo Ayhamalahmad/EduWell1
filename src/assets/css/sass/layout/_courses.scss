@@ -1,0 +1,102 @@
+@use "../helpes/variables" as *;
+/*Start Courses*/
+.p-about {
+  text-align: center;
+  width: 400px;
+  line-height: 1.7;
+  margin: auto;
+}
+.col-courses {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media #{$maxSmall} {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .buttons-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    span {
+      border: 3px solid $OrchidPink;
+      font-family: $font-family;
+      border-radius: 6px;
+      padding: 20px 15px;
+      text-align: center;
+      font-weight: 900;
+      display: block;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
+  ul {
+    width: 70%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding-top: 30px;
+    @media #{$maxSmall} {
+      width: 100%;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    li {
+      display: flex;
+      gap: 30px;
+      @media #{$maxMobile} {
+        flex-direction: column;
+      }
+      .left-image {
+        img {
+          border-radius: 13px 0 0 15px;
+          @media #{$maxMobile} {
+            border-radius: 15px;
+            width: 100%;
+          }
+        }
+      }
+      .right-content {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding: 0px 30px;
+
+        h3 {
+        }
+        p {
+          a {
+            color: $VibrantBlue;
+            cursor: pointer;
+          }
+        }
+        .lb-details {
+          display: flex;
+          gap: 20px;
+          @media #{$maxSmall} {
+            margin: auto;
+          }
+          span {
+            &:nth-child(2) {
+              border-left: 2px solid $Dark;
+              border-right: 2px solid $Dark;
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+          }
+        }
+        .subscribe-course {
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 15px;
+          font-weight: 400;
+          color: $OrchidPink;
+        }
+      }
+    }
+  }
+}
+/*End Courses*/
+
+/* styles.css */

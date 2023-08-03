@@ -1,0 +1,56 @@
+@use "../helpes/variables" as *;
+
+/*Start Services*/ 
+.col{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    // overflow: hidden;
+    // margin: auto;
+    // @media #{$maxSmall} {
+    //     width: calc(100% / 2);
+    // }
+    .box{
+        text-align: center;
+        padding: 20px;
+        border-radius: 15px;
+        transition: .3s;
+        &:hover{
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+
+        }
+        img{}
+        h3{
+            padding: 20px 0;
+        }
+        p{
+            width: 200px;
+            line-height: 1.7;
+        }
+    }
+}
+.bullets{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    span{
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-color: $softLightGray;
+        cursor: pointer;
+        border-radius: 50%;
+        .active{
+            color: $OrchidPink;
+        }
+    }
+}
+/*End Services*/ 
+
+

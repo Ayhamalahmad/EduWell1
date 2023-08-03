@@ -1,0 +1,74 @@
+@use "../helpes/variables" as *;
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  @media #{$maxSmall} {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    align-items: center;
+  }
+  .landing-left {
+    position: relative;
+    &::before {
+      display: none;
+        background-image: url("../images/banner-left-dec.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 378px;
+        height: 378px;
+        content: "";
+        left: -10%;
+        z-index: -1;
+        top: 310px;
+      }
+    p {
+      color: $DarkGray;
+      margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 60px;
+        // max-width: 430px;
+        max-width: 500px;
+        margin-bottom: 30px;
+      span {
+        color: $OrchidPink
+      }
+    }
+
+    a {
+      padding: 10px 15px;
+      background: $LavenderSunsetGradient;
+      border-radius: 5px;
+      color: $light;
+      font-size: 12px;
+
+    }
+  }
+
+  .landing-right {
+    text-align:right;
+    position: relative;
+    @media #{$maxSmall} {
+        text-align: center;
+   
+      }
+    &::after {
+      content: "";
+      display: none;
+      background-image: url("../images/banner-right-dec.png");
+      position: absolute;
+      width: 378px;
+      height: 378px;
+      right: -25%;
+      z-index: -1;
+      top: 80px;
+    }
+    img{
+        width: 80%;
+    }
+  }
+}

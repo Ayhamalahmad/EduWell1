@@ -1,0 +1,28 @@
+// Media
+// Max
+$maxMobile: "(max-width:767px)";
+$maxSmall: "(max-width:991px)";
+$maxLarge: "(max-width:1200px)";
+// Min
+$minSmall: "(min-width:768px)";
+$minMedium: "(min-width:992px)";
+$minLarge: "(min-width:1200px)";
+
+// Colors
+$Dark:black;
+$light:white;
+$SnowWhite:#fff;
+$PaleGray:#eeeeee;
+$LightGray:#eee;
+$DarkGray:#777777;
+$softLightGray:#dddddd;
+$OrchidPink:#dc8cdb;
+$VibrantBlue:#0a58ca;
+$LavenderSunsetGradient:linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
+  //font 
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+  $font-family: 'Open Sans', sans-serif;
