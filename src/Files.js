@@ -4,3 +4,6 @@ export { default as Services } from "./layouts/Services";
 export { default as Courses } from "./layouts/Courses";
 export { default as Upto } from "./layouts/Upto";
 export { default as Monials } from "./layouts/Monials";
+export { default as ContactUsAndFooter } from "./layouts/ContactUsAndFooter";
+export { default as ContactUs } from "./layouts/ContactUs";
+export { default as Footer } from "./layouts/Footer";

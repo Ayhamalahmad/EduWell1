@@ -1,4 +1,4 @@
-import { Header,LandingPage,Services,Courses,Upto ,Monials} from "./Files";
+import { Header,LandingPage,Services,Courses,Upto ,Monials,ContactUsAndFooter,ContactUs,Footer} from "./Files";
 import "./assets/css/homepage.css";
 function App() {
   return (
@@ -11,7 +11,10 @@ function App() {
       </div>
       <Upto/>
       <Monials/>
-      
+      <ContactUsAndFooter>
+      <ContactUs/>
+      <Footer/>
+      </ContactUsAndFooter>
     </div>
   );
 }

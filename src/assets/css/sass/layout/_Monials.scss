@@ -1,4 +1,43 @@
 @use "../helpes/variables" as *;
-/*Start Testimonials */ 
+/*Start Testimonials */
+.boxes {
+  // not forget to delete the padding
+  // padding-bottom: 60px;
+  .container {
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+    .item {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      &:hover {
+        box-shadow: $PrimeryShadow;
+      }
+      p {
+      }
 
-/*End Testimonials */ 
+      h4 {
+        margin-top: 15px;
+      }
+
+      .down-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+        }
+
+        img {
+        }
+      }
+    }
+  }
+}
+
+/*End Testimonials */

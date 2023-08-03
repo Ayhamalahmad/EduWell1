@@ -18,6 +18,7 @@ $DarkGray:#777777;
 $softLightGray:#dddddd;
 $OrchidPink:#dc8cdb;
 $VibrantBlue:#0a58ca;
+$LightBlueGray:#f4f7fb;
 $LavenderSunsetGradient:linear-gradient(
     -145deg,
     rgba(219, 138, 222, 1) 0%,
@@ -26,3 +27,5 @@ $LavenderSunsetGradient:linear-gradient(
   //font 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
   $font-family: 'Open Sans', sans-serif;
+  // primery shadow
+  $PrimeryShadow:0px 0px 15px rgba(0, 0, 0, 0.06);
