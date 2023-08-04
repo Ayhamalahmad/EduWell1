@@ -1,9 +1,41 @@
 @use "../helpes/variables" as *;
 .landing {
+  .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 61px;
+  position: relative;
+  &::before {
+    // display: none;
+      background-image: url("../images/banner-left-dec.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 378px;
+      height: 378px;
+      content: "";
+      left: -10%;
+      z-index: -1;
+      top: 54%;
+    }
+    &::after {
+      content: "";
+      background-image: url("../images/banner-right-dec.png");
+      position: absolute;
+      width: 378px;
+      height: 378px;
+      right: -11%;
+      z-index: -1;
+      top: 11%;
+      @media #{$maxSmall} {
+        top: 50%;
+        right: -25%;
+      }
+      @media #{$maxMobile} {
+        right: -25%;
+      }
+    }
   @media #{$maxSmall} {
     flex-direction: column;
     text-align: center;
@@ -11,20 +43,20 @@
     align-items: center;
   }
   .landing-left {
-    position: relative;
-    &::before {
-      display: none;
-        background-image: url("../images/banner-left-dec.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        width: 378px;
-        height: 378px;
-        content: "";
-        left: -10%;
-        z-index: -1;
-        top: 310px;
-      }
+    // position: relative;
+    // &::before {
+    //   // display: none;
+    //     background-image: url("../images/banner-left-dec.png");
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     position: absolute;
+    //     width: 378px;
+    //     height: 378px;
+    //     content: "";
+    //     left: -10%;
+    //     z-index: -1;
+    //     top: 310px;
+    //   }
     p {
       color: $DarkGray;
       margin-bottom: 20px;
@@ -56,19 +88,20 @@
         text-align: center;
    
       }
-    &::after {
-      content: "";
-      display: none;
-      background-image: url("../images/banner-right-dec.png");
-      position: absolute;
-      width: 378px;
-      height: 378px;
-      right: -25%;
-      z-index: -1;
-      top: 80px;
-    }
+    // &::after {
+    //   content: "";
+    //   display: none;
+    //   background-image: url("../images/banner-right-dec.png");
+    //   position: absolute;
+    //   width: 378px;
+    //   height: 378px;
+    //   right: -25%;
+    //   z-index: -1;
+    //   top: 80px;
+    // }
     img{
         width: 80%;
     }
   }
+}
 }

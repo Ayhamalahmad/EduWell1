@@ -1,14 +1,14 @@
 import courses01 from "../assets/images/courses-01.jpg";
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 function Courses() {
-  const liActive = useRef();
+   const liActive = useRef();
   console.log(liActive.current);
-  useEffect(()=>{
-    if(liActive.current){
-      const allLi=liActive.current.querySelectorAll('li');
+  useEffect(() => {
+    if (liActive.current) {
+      const allLi = liActive.current.querySelectorAll("li");
       console.log(allLi);
     }
-  },[])
+  }, []);
   return (
     <>
       <p className="p-head">our courses</p>
@@ -34,8 +34,8 @@ function Courses() {
             <div className="right-content">
               <h3>Web Development</h3>
               <p>
-                Did you know that you can visit <a href="#">TooCSS website</a> for
-                latest listing of HTML templates and a variety of useful
+                Did you know that you can visit <a href="#">TooCSS website</a>{" "}
+                for latest listing of HTML templates and a variety of useful
                 templates.
                 <br />
                 <br />
@@ -58,8 +58,8 @@ function Courses() {
             <div className="right-content">
               <h3>Web Development</h3>
               <p>
-                Did you know that you can visit <a href="#">TooCSS website</a> for
-                latest listing of HTML templates and a variety of useful
+                Did you know that you can visit <a href="#">TooCSS website</a>{" "}
+                for latest listing of HTML templates and a variety of useful
                 templates.
                 <br />
                 <br />
@@ -82,8 +82,8 @@ function Courses() {
             <div className="right-content">
               <h3>Web Development</h3>
               <p>
-                Did you know that you can visit <a href="#">TooCSS website</a> for
-                latest listing of HTML templates and a variety of useful
+                Did you know that you can visit <a href="#">TooCSS website</a>{" "}
+                for latest listing of HTML templates and a variety of useful
                 templates.
                 <br />
                 <br />
@@ -104,5 +104,4 @@ function Courses() {
     </>
   );
 }
-
 export default Courses;

@@ -1,0 +1,74 @@
+@use "../helpes/variables" as *;
+    /*Start Form*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: $PrimeryShadow;
+    margin-left: -60px;
+    z-index: 20;
+    margin-top: 30px;
+    @media #{$maxSmall} {
+      margin-left: unset;
+    }
+    .head {
+      span {
+        font-size: 14px;
+      }
+      h4 {
+        margin: 10px 0;
+        margin-bottom: 30px;
+
+        span {
+          color: $OrchidPink;
+          margin-left: 5px;
+        }
+      }
+      p {
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      // input-security: ;
+      input:not([type="submit"]) {
+        background-color: $LightBlueGray;
+        border: none;
+        padding: 0 15px;
+        border-radius: 10px;
+        height: 40px;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        background-color: $LightBlueGray;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        min-height: 140px;
+        max-height: 180px;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: $LavenderSunsetGradient;
+        color: $light;
+        width: fit-content;
+        margin-left: auto;
+      }
+    }
+  }
+  /*End From*/

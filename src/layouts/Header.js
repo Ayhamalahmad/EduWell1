@@ -13,7 +13,9 @@ function Header() {
       <div className="logo">
         <img src={log} />
       </div>
-      <FontAwesomeIcon onClick={()=> handleClick()} className="menu-icon" icon={faBars} />
+      <button onClick={()=> handleClick()} className="menu-icon">
+      <FontAwesomeIcon  icon={faBars} />
+      </button>
       <ul className={`${clicked ? "show" : ""} nav`}>
         <li>home</li>
         <li>Services</li>

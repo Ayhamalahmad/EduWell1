@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
         <Header />
-      <div className="container">
       <LandingPage/>
+      <div className="container">
       <Services/>
       <Courses/>
       </div>

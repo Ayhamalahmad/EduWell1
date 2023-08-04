@@ -36,6 +36,8 @@
       font-size: 25px;
       color: $light;
       cursor: pointer;
+      border: none;
+    background: transparent;
     }
     .nav {
       @media #{$maxMobile} {

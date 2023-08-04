@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import {Form} from '../Files';
 function ContactUs() {
   return (
     <div className="contact-us">
@@ -36,25 +37,7 @@ function ContactUs() {
             </div>
           </div>
         </div>
-       
-        <div className="contact-form">
-          <div className="head">
-            <span>contact us</span>
-            <h4>
-              Say<span>Hello</span>
-            </h4>
-            <p>
-              IF you need a working contact form by PHP script, please visit
-              TemplateMo's contact page for more info.
-            </p>
-          </div>
-          <form>
-            <input type="text" placeholder="Full Name"></input>
-            <input type="email" placeholder="Your Email"></input>
-            <textarea placeholder="Your Message"></textarea>
-            <input type="submit" value="SEND MESSAGE"></input>
-          </form>
-        </div>
+       <Form/>
       </div>
     </div>
   );

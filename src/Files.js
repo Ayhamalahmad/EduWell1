@@ -6,4 +6,5 @@ export { default as Upto } from "./layouts/Upto";
 export { default as Monials } from "./layouts/Monials";
 export { default as ContactUsAndFooter } from "./layouts/ContactUsAndFooter";
 export { default as ContactUs } from "./layouts/ContactUs";
+export { default as Form } from "./components/Form";
 export { default as Footer } from "./layouts/Footer";
