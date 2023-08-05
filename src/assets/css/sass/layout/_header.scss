@@ -57,7 +57,7 @@
         text-align: center;
         z-index: 100;
         border-radius: 5px;
-        li {
+        a {
           color: $Dark;
           padding: 20px;
           &:hover {
@@ -71,7 +71,8 @@
         }
       }
       // media 767
-      li {
+      a {
+        // background-color: red !important;
         padding: 0 20px;
         color: $light;
         cursor: pointer;

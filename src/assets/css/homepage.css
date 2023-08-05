@@ -81,18 +81,18 @@ a {
   z-index: 100;
   border-radius: 5px;
 }
-.header .container .nav.show li {
+.header .container .nav.show a {
   color: black;
   padding: 20px;
 }
-.header .container .nav.show li:hover {
+.header .container .nav.show a:hover {
   color: #dc8cdb;
   background-color: #eeeeee;
 }
-.header .container .nav.show li:not(:last-child) {
+.header .container .nav.show a:not(:last-child) {
   border-bottom: 1px solid rgba(68, 68, 68, 0.06);
 }
-.header .container .nav li {
+.header .container .nav a {
   padding: 0 20px;
   color: #fff;
   cursor: pointer;

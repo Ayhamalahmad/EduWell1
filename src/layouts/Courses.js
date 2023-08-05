@@ -1,14 +1,7 @@
 import courses01 from "../assets/images/courses-01.jpg";
-import React, { useEffect, useRef } from "react";
-function Courses() {
-   const liActive = useRef();
-  console.log(liActive.current);
-  useEffect(() => {
-    if (liActive.current) {
-      const allLi = liActive.current.querySelectorAll("li");
-      console.log(allLi);
-    }
-  }, []);
+import React, {   useRef } from "react";
+export default function Courses() {
+  const liActive = useRef();
   return (
     <>
       <p className="p-head">our courses</p>
@@ -104,4 +97,3 @@ function Courses() {
     </>
   );
 }
-export default Courses;

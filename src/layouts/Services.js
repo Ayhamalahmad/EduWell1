@@ -1,14 +1,14 @@
 import ert from "../assets/images/service-icon-01.png";
-import React, { useRef, createContext } from "react";
-function Services() {
-  const boxesContainer = useRef();
+import React, { useRef,forwardRef  } from "react";
+export default function Services({ boxesContainerRef }) {
+  // const boxesContainer = useRef();
   return (
     <>
       <p className="p-head">Our Services</p>
       <h2 className="h2-head">
         Provided <span>Services</span>
       </h2>
-      <div ref={boxesContainer} className="col">
+      <div ref={boxesContainerRef} className="col">
         <div className="box">
           <img src={ert} />
           <h3>Ready Target</h3>
@@ -47,8 +47,8 @@ function Services() {
         <span></span>
         <span></span>
       </div>
+
     </>
   );
 }
 
-export default Services;
