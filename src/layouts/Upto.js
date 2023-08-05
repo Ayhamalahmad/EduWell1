@@ -1,9 +1,9 @@
 import React from "react";
 import ctaLeft from "../assets/images/cta-left-image.png";
 
-function Upto() {
+function Upto({upToRef}) {
   return (
-    <div className="upto">
+    <div ref={upToRef} className="upto">
       <div className="container">
         <div className="image-left">
           <img src={ctaLeft} />

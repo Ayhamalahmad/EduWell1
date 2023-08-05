@@ -1,7 +1,7 @@
-function ContactUsAndFooter(props) {
+function ContactUsAndFooter({children,ContactUsAndFooterRef}) {
     return (
-        <section className="contact-us-and-footer">
-            {props.children}
+        <section ref={ContactUsAndFooterRef} className="contact-us-and-footer">
+            {children}
         </section>
     );
 }

@@ -1,7 +1,5 @@
 import ert from "../assets/images/service-icon-01.png";
-import React, { useRef,forwardRef  } from "react";
 export default function Services({ boxesContainerRef }) {
-  // const boxesContainer = useRef();
   return (
     <>
       <p className="p-head">Our Services</p>

@@ -1,9 +1,9 @@
 // import bannerRightImage from "banner-right-image.png";
 import bannerRightImage from "../assets/images/banner-right-image.png";
 
-function LandingPage(props) {
+function LandingPage({LandingPageRef}) {
   return (
-    <div className="landing">
+    <div ref={LandingPageRef} className="landing">
       <div className="container">
         <div className="landing-left">
           <p>Welcome To Our School</p>

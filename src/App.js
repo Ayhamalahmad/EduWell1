@@ -10,29 +10,34 @@ import {
   Footer,
 } from "./Files";
 import "./assets/css/homepage.css";
-import React, { useRef, forwardRef,useEffect } from "react";
-export default forwardRef(function App(_,ref) {
+import React, { useRef, forwardRef, useEffect } from "react";
+export default forwardRef(function App(_, ref) {
   const boxesContainerRef = useRef();
-  const headerRef = useRef();
-  console.log(headerRef); // تحقق هنا للتأكد من قيمة headerRef
-
-  // console.log(boxesContainerRef.current); // logs <div>Deep!</div>
-  // useEffect(() => {
-  //   console.log(boxesContainerRef.current); // logs <div>Deep!</div>
-  // }, [])
-  // console.log(boxesContainerRef);
+  const colCoursesRef = useRef();
+  const upToRef = useRef();
+  const LandingPageRef = useRef();
+  const testimonialsRef = useRef();
+  const ContactUsAndFooterRef = useRef();
   return (
     // don't forget to move container to components
     <div className="App">
-      <Header boxesContainerRef={boxesContainerRef} ref={headerRef}/>
-      <LandingPage />
+      {/* ref={headerRef} */}
+      <Header
+        ContactUsAndFooterRef={ContactUsAndFooterRef}
+        testimonialsRef={testimonialsRef}
+        LandingPageRef={LandingPageRef}
+        boxesContainerRef={boxesContainerRef}
+        colCoursesRef={colCoursesRef}
+        upToRef={upToRef}
+      />
+      <LandingPage LandingPageRef={LandingPageRef} />
       <div className="container">
-        <Services boxesContainerRef={boxesContainerRef}  />
-        <Courses />
+        <Services boxesContainerRef={boxesContainerRef} />
+        <Courses colCoursesRef={colCoursesRef} />
       </div>
-      <Upto />
-      <Monials />
-      <ContactUsAndFooter>
+      <Upto upToRef={upToRef} />
+      <Monials testimonialsRef={testimonialsRef} />
+      <ContactUsAndFooter ContactUsAndFooterRef={ContactUsAndFooterRef}>
         <ContactUs />
         <Footer />
       </ContactUsAndFooter>

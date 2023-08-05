@@ -1,6 +1,6 @@
 import courses01 from "../assets/images/courses-01.jpg";
 import React, {   useRef } from "react";
-export default function Courses() {
+export default function Courses({colCoursesRef}) {
   const liActive = useRef();
   return (
     <>
@@ -12,7 +12,7 @@ export default function Courses() {
         You just think about TemplateMo whenever you need free CSS templates for
         your business website
       </p>
-      <div className="col-courses">
+      <div ref={colCoursesRef} className="col-courses">
         <div className="buttons-menu">
           <span>Web Development</span>
           <span>Graphic Design</span>

@@ -1,6 +1,6 @@
 import log from "../assets/images/templatemo-eduwell.png";
 import { useRef, useState } from "react";
-function Monials(props) {
+function Monials({testimonialsRef}) {
   const div = useRef(null);
   const [isDragStart, setisDragStart] = useState(false);
   const [prevPageX, setprevPageX] = useState();
@@ -22,8 +22,8 @@ function Monials(props) {
     setisDragStart(false);
   };
   return (
-    <div className="boxes">
-      <p className="p-head">our courses</p>
+    <div ref={testimonialsRef} className="boxes">
+      <p className="p-head">TESTIMONIALS</p>
       <h2 className="h2-head">
         What You Can <span>Learn</span>
       </h2>
