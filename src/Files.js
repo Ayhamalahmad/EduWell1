@@ -7,4 +7,6 @@ export { default as Monials } from "./layouts/Monials";
 export { default as ContactUsAndFooter } from "./layouts/ContactUsAndFooter";
 export { default as ContactUs } from "./layouts/ContactUs";
 export { default as Form } from "./components/Form";
+export { default as Map } from "./components/Map";
+export { default as Bullets } from "./components/Bullets";
 export { default as Footer } from "./layouts/Footer";

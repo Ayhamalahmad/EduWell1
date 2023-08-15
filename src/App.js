@@ -21,7 +21,6 @@ export default forwardRef(function App(_, ref) {
   return (
     // don't forget to move container to components
     <div className="App">
-      {/* ref={headerRef} */}
       <Header
         ContactUsAndFooterRef={ContactUsAndFooterRef}
         testimonialsRef={testimonialsRef}

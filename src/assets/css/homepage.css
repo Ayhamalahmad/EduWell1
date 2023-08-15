@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+/*Start bullets Component*/
+.bullets {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.bullets span {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #dddddd;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.bullets span .active {
+  color: #dc8cdb;
+}
+
+/*End  bullets Component*/
 body {
   background-color: #fff;
   margin: 0;
@@ -206,26 +228,6 @@ a {
   line-height: 1.7;
 }
 
-.bullets {
-  text-align: center;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 60px;
-}
-.bullets span {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  background-color: #dddddd;
-  cursor: pointer;
-  border-radius: 50%;
-}
-.bullets span .active {
-  color: #dc8cdb;
-}
-
 /*End Services*/
 /*Start Courses*/
 .p-about {
@@ -427,27 +429,36 @@ a {
 
 /*End Upto*/
 /*Start Testimonials */
-.boxes .container {
+.boxes .container .wrapper {
   overflow-x: scroll;
   display: flex;
   align-items: center;
+  scroll-behavior: smooth;
   gap: 20px;
   padding: 60px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: grab;
+  transition: scroll 0.4s;
 }
-.boxes .container .item {
+.boxes .container .wrapper::-webkit-scrollbar {
+  display: none;
+}
+.boxes .container .wrapper .item {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
 }
-.boxes .container .item:hover {
+.boxes .container .wrapper .item:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
 }
-.boxes .container .item h4 {
+.boxes .container .wrapper .item h4 {
   margin-top: 15px;
 }
-.boxes .container .item .down-content {
+.boxes .container .wrapper .item .down-content {
   display: flex;
   align-items: center;
   gap: 20px;

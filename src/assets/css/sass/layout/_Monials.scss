@@ -1,42 +1,53 @@
 @use "../helpes/variables" as *;
 /*Start Testimonials */
 .boxes {
-  // not forget to delete the padding
-  // padding-bottom: 60px;
   .container {
-    overflow-x: scroll;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 60px 0;
-    .item {
+    .wrapper {
+      overflow-x: scroll;
       display: flex;
-      flex-direction: column;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      &:hover {
-        box-shadow: $PrimeryShadow;
+      align-items: center;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding: 60px 0;
+      user-select: none;
+      // transform-style:preserve-3d;
+      // transform-origin: center;
+      // transform: translateZ(20px);
+      cursor: grab;
+      transition: scroll 0.4s;
+      &::-webkit-scrollbar {
+        display: none;
       }
-      p {
-      }
-
-      h4 {
-        margin-top: 15px;
-      }
-
-      .down-content {
+      .item {
         display: flex;
-        align-items: center;
-        gap: 20px;
-
-        span {
+        flex-direction: column;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        &:hover {
+          box-shadow: $PrimeryShadow;
+        }
+        p {
         }
 
-        img {
+        h4 {
+          margin-top: 15px;
+        }
+
+        .down-content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          span {
+          }
+
+          img {
+          }
         }
       }
     }
+    //
   }
 }
 

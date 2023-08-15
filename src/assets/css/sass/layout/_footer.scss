@@ -5,26 +5,26 @@
   .container {
     text-align: center;
     .social-media {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 30px;
-    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+
       li {
         a {
-            cursor: pointer;
-            svg{
-                transition: .3s;
-                background-color:$light ;
-                color: $OrchidPink;
-                padding: 15px;
-                border-radius: 50%;
-                &:hover{
-                    background-color:$OrchidPink ;
-                    color: $light;
-                }
+          cursor: pointer;
+          svg {
+            transition: 0.3s;
+            background-color: $light;
+            color: $OrchidPink;
+            padding: 15px;
+            border-radius: 50%;
+            &:hover {
+              background-color: $OrchidPink;
+              color: $light;
             }
+          }
         }
       }
     }

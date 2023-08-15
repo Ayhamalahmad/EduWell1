@@ -1,4 +1,5 @@
 import ert from "../assets/images/service-icon-01.png";
+import {Bullets }from '../Files'
 export default function Services({ boxesContainerRef }) {
   return (
     <>
@@ -40,13 +41,7 @@ export default function Services({ boxesContainerRef }) {
           </p>
         </div>
       </div>
-      <div className="bullets">
-        <span className="active"></span>
-        <span></span>
-        <span></span>
-      </div>
-
+      <Bullets />
     </>
   );
 }
-

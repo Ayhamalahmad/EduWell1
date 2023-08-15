@@ -1,7 +1,7 @@
 // import bannerRightImage from "banner-right-image.png";
 import bannerRightImage from "../assets/images/banner-right-image.png";
 
-function LandingPage({LandingPageRef}) {
+export default function LandingPage({LandingPageRef}) {
   return (
     <div ref={LandingPageRef} className="landing">
       <div className="container">
@@ -20,4 +20,3 @@ function LandingPage({LandingPageRef}) {
   );
 }
 
-export default LandingPage;
