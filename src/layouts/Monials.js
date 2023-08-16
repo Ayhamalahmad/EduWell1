@@ -6,8 +6,6 @@ export default function Monials({ testimonialsRef }) {
   const container = useRef();
   //
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState(1); // اتجاه التنقل: 1 للأمام، -1 للعكس
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
@@ -85,10 +83,7 @@ export default function Monials({ testimonialsRef }) {
                 key={tdata.id}
                 ref={(e) => (itemsRef.current[index] = e)}
                 style={{
-                  transform:
-                    currentSlide == 0
-                      ? `translateX(${currentSlide * 304.28}px)`
-                      : `translateX(-${currentSlide * 304.28}px)`,
+                  transform: `translateX(-${currentSlide * 304.28}px)`,
                 }}
                 className="item"
               >
