@@ -8,6 +8,7 @@ import {
   ContactUsAndFooter,
   ContactUs,
   Footer,
+  Slider,
 } from "./Files";
 import "./assets/css/homepage.css";
 import React, { useRef, forwardRef, useEffect } from "react";
@@ -40,6 +41,7 @@ export default forwardRef(function App(_, ref) {
         <ContactUs />
         <Footer />
       </ContactUsAndFooter>
+      {/* <Slider/> */}
     </div>
   );
 });

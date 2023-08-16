@@ -6,6 +6,7 @@ export { default as Upto } from "./layouts/Upto";
 export { default as Monials } from "./layouts/Monials";
 export { default as ContactUsAndFooter } from "./layouts/ContactUsAndFooter";
 export { default as ContactUs } from "./layouts/ContactUs";
+export { default as Slider } from "./layouts/Slider.jsx";
 export { default as Form } from "./components/Form";
 export { default as Map } from "./components/Map";
 export { default as Bullets } from "./components/Bullets";
