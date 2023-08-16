@@ -4,19 +4,17 @@ import { Bullets } from "../Files";
 export default function Monials({ testimonialsRef }) {
   const itemsRef = useRef([]);
   const container = useRef();
-  //
+  // Hnadle Slide
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
     }, 2500);
-
     return () => {
       clearInterval(interval);
     };
   }, []);
-
-  //
+  // Hnadle Slide
   const data = [
     {
       id: 1,
