@@ -440,7 +440,6 @@ a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  cursor: grab;
   transition: transform 0.3s ease-in-out;
 }
 .boxes .container .wrapper::-webkit-scrollbar {
@@ -455,6 +454,9 @@ a {
   border-radius: 15px;
 }
 .boxes .container .wrapper .item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+.boxes .container .wrapper .item.active {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
 }
 .boxes .container .wrapper .item h4 {

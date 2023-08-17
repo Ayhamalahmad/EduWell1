@@ -10,7 +10,7 @@
       gap: 20px;
       padding: 60px 0;
       user-select: none;
-      cursor: grab;
+      // cursor: grab;
       transition: transform 0.3s ease-in-out;
       &::-webkit-scrollbar {
         display: none;
@@ -24,6 +24,9 @@
         padding: 30px;
         border-radius: 15px;
         &:hover {
+          box-shadow: $PrimeryShadow;
+        }
+        &.active{
           box-shadow: $PrimeryShadow;
         }
         p {

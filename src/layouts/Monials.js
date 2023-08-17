@@ -146,7 +146,7 @@ export default function Monials({ testimonialsRef }) {
                 style={{
                   transform: `translateX(-${currentSlide * 304.28}px)`,
                 }}
-                className="item"
+                className={`item ${currentSlide === index ? "active":""}`}
               >
                 <p>{tdata.Paragraph}</p>
                 <h4>{tdata.title}</h4>
