@@ -1,12 +1,10 @@
 import log from "../assets/images/templatemo-eduwell.png";
 import { useRef, useState, useEffect } from "react";
-// import { Bullets } from "../Files";
 export default function Monials({ testimonialsRef }) {
   const itemsRef = useRef([]);
   const container = useRef();
   // Hnadle Slide
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [active, setActive] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
