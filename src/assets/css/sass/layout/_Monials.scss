@@ -48,4 +48,14 @@
     //
   }
 }
+//   swiper-react-autoplay-progress
+.bullets{
+  span{
+    &.active{
+      background-color: red;
+    }
+  }
+}
+
+// 
 /*End Testimonials */

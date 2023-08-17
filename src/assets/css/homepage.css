@@ -464,6 +464,10 @@ a {
   align-items: center;
   gap: 20px;
 }
+.bullets span.active {
+  background-color: red;
+}
+
 /*End Testimonials */
 .contact-us-and-footer {
   background-image: url(../images/footer-bg.png);
