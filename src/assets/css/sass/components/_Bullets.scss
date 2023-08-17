@@ -1,22 +1,23 @@
 @use "../helpes/variables" as *;
-/*Start bullets Component*/ 
-.bullets{
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 60px;
-    span{
-        position: relative;
-        width: 10px;
-        height: 10px;
-        background-color: $softLightGray;
-        cursor: pointer;
-        border-radius: 50%;
-        .active{
-            color: $OrchidPink;
-        }
+/*Start bullets Component*/
+.bullets {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+  span {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background-color: $softLightGray;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background-color .3s;
+      &.active {
+      background-color: $OrchidPink;
     }
+  }
 }
-/*End  bullets Component*/ 
+/*End  bullets Component*/

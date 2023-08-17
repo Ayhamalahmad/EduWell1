@@ -1,19 +1,6 @@
 import log from "../assets/images/templatemo-eduwell.png";
 import { useRef, useState, useEffect } from "react";
-import { Bullets } from "../Files";
-// swiper-react-autoplay-progress
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-// import required modules
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// import './styles.css';
-// swiper-react-autoplay-progress
+// import { Bullets } from "../Files";
 export default function Monials({ testimonialsRef }) {
   const itemsRef = useRef([]);
   const container = useRef();
@@ -80,15 +67,6 @@ export default function Monials({ testimonialsRef }) {
         "“Praesent accumsan condimentum arcu, id porttitor est semper nec Nunc diam lorem.”",
     },
   ];
-
-  // swiper-react-autoplay-progress
-  // const progressCircle = useRef(null);
-  // const progressContent = useRef(null);
-  // const onAutoplayTimeLeft = (s, time, progress) => {
-  //   progressCircle.current.style.setProperty("--progress", 1 - progress);
-  //   progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  // };
-  // swiper-react-autoplay-progress
   return (
     <div ref={testimonialsRef} className="boxes">
       <p className="p-head">TESTIMONIALS</p>
@@ -96,47 +74,6 @@ export default function Monials({ testimonialsRef }) {
         What You Can <span>Learn</span>
       </h2>
       <div ref={container} className="container">
-        {/* swiper-react-autoplay-progress */}
-        {/* <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation,Pagination]}
-          
-          // onAutoplayTimeLeft={onAutoplayTimeLeft}
-          className="mySwiper"
-        >
-          <SwiperSlide  className="wrapper">
-             {data.map((tdata, index) => {
-            return (
-              <div
-                key={tdata.id}
-                ref={(e) => (itemsRef.current[index] = e)}
-                style={{
-                  transform: `translateX(-${currentSlide * 304.28}px)`,
-                }}
-                className="item"
-              >
-                <p>{tdata.Paragraph}</p>
-                <h4>{tdata.title}</h4>
-                <div className="down-content">
-                  <span>Creative Designer</span>
-                  <img src={log}></img>
-                </div>
-              </div>
-            );
-          })}
-          </SwiperSlide>
-        </Swiper> */}
-        {/* swiper-react-autoplay-progress */}
-
         <div className="wrapper">
           {data.map((tdata, index) => {
             return (
@@ -146,7 +83,7 @@ export default function Monials({ testimonialsRef }) {
                 style={{
                   transform: `translateX(-${currentSlide * 304.28}px)`,
                 }}
-                className={`item ${currentSlide === index ? "active":""}`}
+                className={`item ${currentSlide === index ? "active" : ""}`}
               >
                 <p>{tdata.Paragraph}</p>
                 <h4>{tdata.title}</h4>
@@ -161,12 +98,14 @@ export default function Monials({ testimonialsRef }) {
       </div>
       <div className="bullets">
         {data.map((item, index) => (
-            <span className={currentSlide === index ? "active": null}
+          <span
+            className={currentSlide === index ? "active" : null}
             onClick={() => setCurrentSlide(index)}
-            >{index.length}</span>
+          >
+            {index.length}
+          </span>
         ))}
       </div>
-      {/* <Bullets /> */}
     </div>
   );
 }

@@ -15,9 +15,10 @@
   background-color: #dddddd;
   cursor: pointer;
   border-radius: 50%;
+  transition: background-color 0.3s;
 }
-.bullets span .active {
-  color: #dc8cdb;
+.bullets span.active {
+  background-color: #dc8cdb;
 }
 
 /*End  bullets Component*/
@@ -467,10 +468,6 @@ a {
   align-items: center;
   gap: 20px;
 }
-.bullets span.active {
-  background-color: red;
-}
-
 /*End Testimonials */
 .contact-us-and-footer {
   background-image: url(../images/footer-bg.png);
