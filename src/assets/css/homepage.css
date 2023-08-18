@@ -297,6 +297,9 @@ a {
   cursor: pointer;
   font-size: 18px;
 }
+.col-courses .buttons-menu span.active {
+  color: #dc8cdb;
+}
 .col-courses ul {
   width: 70%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
