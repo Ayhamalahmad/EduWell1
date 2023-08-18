@@ -48,6 +48,15 @@ a {
 .header {
   background: linear-gradient(-145deg, rgb(219, 138, 222) 0%, rgb(246, 191, 159) 100%);
 }
+.header.fixed {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(-145deg, rgb(219, 138, 222) 0%, rgb(246, 191, 159) 100%);
+}
 @media (min-width:1200px) {
   .header {
     background-image: url("../images/header-bg.png");
