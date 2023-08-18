@@ -3,21 +3,19 @@
 .boxes {
   .container {
     .wrapper {
-      overflow-x: scroll;
       display: flex;
       align-items: center;
+      overflow-x: scroll;
       scroll-behavior: smooth;
+      transition: transform 0.3s ease-in-out;
       gap: 20px;
       padding: 60px 0;
       user-select: none;
-      // cursor: grab;
-      transition: transform 0.3s ease-in-out;
       &::-webkit-scrollbar {
         display: none;
       }
       .item {
         transition: transform 0.3s ease-in-out;
-
         display: flex;
         flex-direction: column;
         background-color: #fff;

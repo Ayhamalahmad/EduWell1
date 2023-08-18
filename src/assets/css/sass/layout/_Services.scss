@@ -1,33 +1,51 @@
 @use "../helpes/variables" as *;
 
-/*Start Services*/ 
-.col{
+/*Start Services*/
+.container {
+  overflow: hidden;
+  .col {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    transition: transform 0.3s ease-in-out;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
-    justify-content: center;
     padding-bottom: 60px;
     padding-top: 60px;
-    .box{
-        text-align: center;
-        padding: 20px;
-        border-radius: 15px;
-        transition: .3s;
-        &:hover{
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-
-        }
-        img{}
-        h3{
-            padding: 20px 0;
-        }
-        p{
-            width: 200px;
-            line-height: 1.7;
-        }
+    &::-webkit-scrollbar {
+      display: none;
     }
+    @media #{$maxMobile} {
+        margin-left: 15px;
+    }
+    .box {
+      text-align: center;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.3s;
+      &:nth-child(1) {
+        margin-left: 20px;
+      }
+      &:hover {
+        box-shadow: $PrimeryShadow;
+      }
+      &.active {
+        box-shadow: $PrimeryShadow;
+      }
+      @media #{$maxMobile} {
+        padding: 32px;
+      }
+      img {
+      }
+      h3 {
+        padding: 20px 0;
+      }
+      p {
+        width: 200px;
+        line-height: 1.7;
+      }
+    }
+  }
 }
 
-/*End Services*/ 
-
-
+/*End Services*/

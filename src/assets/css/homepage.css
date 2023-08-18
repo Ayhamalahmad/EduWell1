@@ -205,27 +205,51 @@ a {
 }
 
 /*Start Services*/
-.col {
+.container {
+  overflow: hidden;
+}
+.container .col {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease-in-out;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.col .box {
+.container .col::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width:767px) {
+  .container .col {
+    margin-left: 15px;
+  }
+}
+.container .col .box {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
   transition: 0.3s;
 }
-.col .box:hover {
+.container .col .box:nth-child(1) {
+  margin-left: 20px;
+}
+.container .col .box:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
 }
-.col .box h3 {
+.container .col .box.active {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+@media (max-width:767px) {
+  .container .col .box {
+    padding: 32px;
+  }
+}
+.container .col .box h3 {
   padding: 20px 0;
 }
-.col .box p {
+.container .col .box p {
   width: 200px;
   line-height: 1.7;
 }
@@ -432,16 +456,16 @@ a {
 /*End Upto*/
 /*Start Testimonials */
 .boxes .container .wrapper {
-  overflow-x: scroll;
   display: flex;
   align-items: center;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+  transition: transform 0.3s ease-in-out;
   gap: 20px;
   padding: 60px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  transition: transform 0.3s ease-in-out;
 }
 .boxes .container .wrapper::-webkit-scrollbar {
   display: none;
