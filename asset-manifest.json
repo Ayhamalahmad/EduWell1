@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/EduWell1/static/css/main.e25f2221.css",
+    "main.js": "/EduWell1/static/js/main.b2c41c3b.js",
+    "static/js/787.181a96ff.chunk.js": "/EduWell1/static/js/787.181a96ff.chunk.js",
+    "static/media/cta-left-image.png": "/EduWell1/static/media/cta-left-image.92070f11c19a3d55c171.png",
+    "static/media/footer-bg.png": "/EduWell1/static/media/footer-bg.956c4965902012cdc66e.png",
+    "static/media/cta-bg.png": "/EduWell1/static/media/cta-bg.e700064033ec10854fd9.png",
+    "static/media/courses-01.jpg": "/EduWell1/static/media/courses-01.eba88792289274cf5b09.jpg",
+    "static/media/courses-02.jpg": "/EduWell1/static/media/courses-02.1d9dafcb1e9dd7de56a4.jpg",
+    "static/media/courses-03.jpg": "/EduWell1/static/media/courses-03.0556b15d9c35268165f0.jpg",
+    "static/media/banner-right-image.png": "/EduWell1/static/media/banner-right-image.68c7bf131782d01e86e9.png",
+    "static/media/courses-04.jpg": "/EduWell1/static/media/courses-04.0f1459f22dbec3554e31.jpg",
+    "static/media/banner-right-dec.png": "/EduWell1/static/media/banner-right-dec.c6e6476da72953151a9b.png",
+    "static/media/banner-left-dec.png": "/EduWell1/static/media/banner-left-dec.e3c8d76e6887bc95e627.png",
+    "static/media/header-bg.png": "/EduWell1/static/media/header-bg.9e22a74acd137b394197.png",
+    "index.html": "/EduWell1/index.html",
+    "main.e25f2221.css.map": "/EduWell1/static/css/main.e25f2221.css.map",
+    "main.b2c41c3b.js.map": "/EduWell1/static/js/main.b2c41c3b.js.map",
+    "787.181a96ff.chunk.js.map": "/EduWell1/static/js/787.181a96ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e25f2221.css",
+    "static/js/main.b2c41c3b.js"
+  ]
+}
