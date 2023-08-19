@@ -1,6 +1,6 @@
 # EduWell Template
 
-Welcome to the EduWell1 website! This repository hosts the source code for the EduWell1 website, which can be accessed at [https://ayhamalahmad.github.io/EduWell1/](https://ayhamalahmad.github.io/EduWell1/).
+Welcome to the EduWell1 Template! This repository hosts the source code for the EduWell1 website, which can be accessed at [https://ayhamalahmad.github.io/EduWell1/](https://ayhamalahmad.github.io/EduWell1/).
 
 ## About
 
