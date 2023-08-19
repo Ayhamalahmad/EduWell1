@@ -21,7 +21,7 @@ The EduWell1 website is built using React and includes the following components:
 
 - **Upto**
 
-- **Monials**
+- **TESTIMONIALS**
 
 ## Technical Details
 
