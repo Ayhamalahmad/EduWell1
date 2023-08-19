@@ -5,7 +5,11 @@
   width: 400px;
   line-height: 1.7;
   margin: auto;
+  @media #{$maxMobile} {
+    width: 90%;
+  }
 }
+
 .col-courses {
   display: flex;
   justify-content: space-between;
@@ -53,8 +57,14 @@
       display: none;
       gap: 30px;
       align-items: center;
+      opacity: 0;
+      transform: translateX(50px);
       &.active {
         display: flex;
+        transition-delay: 0.3s;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0px);
       }
       @media #{$maxMobile} {
         flex-direction: column;

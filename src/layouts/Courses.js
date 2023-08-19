@@ -8,7 +8,7 @@ export default function Courses({ colCoursesRef }) {
   const [currentActive, setCurrentActive] = useState(0);
   const liActive = useRef();
   return (
-    <>
+    <div className="container">
       <p className="p-head">our courses</p>
       <h2 className="h2-head">
         What You Can <span>Learn</span>
@@ -84,7 +84,7 @@ export default function Courses({ colCoursesRef }) {
             <div className="right-content">
               <h3>Graphic Designt</h3>
               <p>
-                Did you know that you can visit <a href="#">TooCSS website</a>{" "}
+                Did you know that you can visit <a href="#">TooCSS website</a>
                 for latest listing of HTML templates and a variety of useful
                 templates.
                 <br />
@@ -103,9 +103,7 @@ export default function Courses({ colCoursesRef }) {
           </li>
           <li className={currentActive === 2 ? "active" : ""}>
             <div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              
               className="left-image"
             >
               <img src={courses03}></img>
@@ -156,6 +154,6 @@ export default function Courses({ colCoursesRef }) {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

@@ -11,20 +11,26 @@
       gap: 20px;
       margin-bottom: 30px;
 
-      li {
-        a {
-          cursor: pointer;
-          svg {
-            transition: 0.3s;
-            background-color: $light;
-            color: $OrchidPink;
-            padding: 15px;
-            border-radius: 50%;
-            &:hover {
-              background-color: $OrchidPink;
-              color: $light;
-            }
-          }
+      a {
+        background-color: $light;
+        color: $OrchidPink;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 0.3s;
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+          background-color: $OrchidPink;
+          color: $light;
+        }
+        svg {
+          font-size: 30px;
+          // padding: 15px;
+          // background-color: $light;
+          // width: 100%;
+          // border-radius: 50%;
         }
       }
     }

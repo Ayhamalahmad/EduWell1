@@ -79,9 +79,9 @@ export default function Monials({ testimonialsRef }) {
                 key={tdata.id}
                 ref={(e) => (itemsRef.current[index] = e)}
                 style={{
-                  transform: `translateX(-${currentSlide * 304.28}px)`,
+                  transform: `translateX(-${currentSlide * 324.28}px)`,
                 }}
-                className={`item ${currentSlide === index ? "active" : ""}`}
+                className={`item ${currentSlide  === index  ? "active" : ""}`}
               >
                 <p>{tdata.Paragraph}</p>
                 <h4>{tdata.title}</h4>
@@ -96,7 +96,7 @@ export default function Monials({ testimonialsRef }) {
       </div>
       <div className="bullets">
         {data.map((item, index) => (
-          <span
+          <span key={index}
             className={currentSlide === index ? "active" : null}
             onClick={() => setCurrentSlide(index)}
           >

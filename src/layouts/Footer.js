@@ -1,35 +1,33 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faFacebook } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  AiFillFacebook,
+  AiFillTwitterCircle,
+  AiOutlineGithub,
+  AiOutlineBehance,
+} from "react-icons/ai";
 function Footer() {
+  // Dynamic Year
+  const dynamicYear = new Date().getFullYear();
   return (
     <div className="footer">
       <div className="container">
-        <ul className="social-media">
-          <li>
-            <a>
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
-          </li>
-        </ul>
+        <div className="social-media">
+          <a>
+            <AiFillFacebook />
+          </a>
+          <a>
+            <AiFillTwitterCircle />
+          </a>
+          <a>
+            <AiOutlineGithub />
+          </a>
+          <a>
+            <AiOutlineBehance />
+          </a>
+        </div>
         <div className="content">
           <p>
-            Copyright © <span>2022</span> EduWell Co., Ltd. All Rights Reserved.
+            Copyright © <span>{dynamicYear}</span> Ayham Co., Ltd. All Rights
+            Reserved.
           </p>
         </div>
       </div>

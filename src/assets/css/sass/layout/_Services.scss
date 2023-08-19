@@ -2,27 +2,27 @@
 
 /*Start Services*/
 .container {
-  overflow: hidden;
+  // overflow: hidden;
+  
   .col {
-    overflow-x: scroll;
-    scroll-behavior: smooth;
     transition: transform 0.3s ease-in-out;
     display: flex;
     gap: 30px;
     align-items: center;
     padding-bottom: 60px;
     padding-top: 60px;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    width: 25%;
+    margin: auto;
     @media #{$maxMobile} {
-        margin-left: 15px;
+      width: 90%;
     }
     .box {
+      will-change: blur;
       text-align: center;
       padding: 30px;
       border-radius: 15px;
       transition: 0.3s;
+      filter: blur(1px);
       &:nth-child(1) {
         margin-left: 20px;
       }
@@ -31,6 +31,7 @@
       }
       &.active {
         box-shadow: $PrimeryShadow;
+        filter: blur(0);
       }
       @media #{$maxMobile} {
         padding: 32px;

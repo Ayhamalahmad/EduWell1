@@ -8,10 +8,9 @@ import {
   ContactUsAndFooter,
   ContactUs,
   Footer,
-  Slider,
 } from "./Files";
 import "./assets/css/homepage.css";
-import React, { useRef, forwardRef, useEffect } from "react";
+import React, { useRef, forwardRef } from "react";
 export default forwardRef(function App(_, ref) {
   const boxesContainerRef = useRef();
   const colCoursesRef = useRef();
@@ -20,7 +19,6 @@ export default forwardRef(function App(_, ref) {
   const testimonialsRef = useRef();
   const ContactUsAndFooterRef = useRef();
   return (
-    // don't forget to move container to components
     <div className="App">
       <Header
         ContactUsAndFooterRef={ContactUsAndFooterRef}
@@ -31,17 +29,14 @@ export default forwardRef(function App(_, ref) {
         upToRef={upToRef}
       />
       <LandingPage LandingPageRef={LandingPageRef} />
-      <div className="container">
         <Services boxesContainerRef={boxesContainerRef} />
         <Courses colCoursesRef={colCoursesRef} />
-      </div>
       <Upto upToRef={upToRef} />
       <Monials testimonialsRef={testimonialsRef} />
       <ContactUsAndFooter ContactUsAndFooterRef={ContactUsAndFooterRef}>
         <ContactUs />
         <Footer />
       </ContactUsAndFooter>
-      {/* <Slider/> */}
     </div>
   );
 });

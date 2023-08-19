@@ -5,7 +5,7 @@ export default function LandingPage({LandingPageRef}) {
   return (
     <div ref={LandingPageRef} className="landing">
       <div className="container">
-        <div className="landing-left">
+        <div  className="landing-left">
           <p>Welcome To Our School</p>
           <h1>
             Best Place To Learn Graphic <span>Design!</span>{" "}

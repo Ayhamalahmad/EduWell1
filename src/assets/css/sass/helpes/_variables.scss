@@ -9,23 +9,25 @@ $minMedium: "(min-width:992px)";
 $minLarge: "(min-width:1200px)";
 
 // Colors
-$Dark:black;
-$light:#fff;
-$SnowWhite:#fff;
-$PaleGray:#eeeeee;
-$LightGray:#eee;
-$DarkGray:#777777;
-$softLightGray:#dddddd;
-$OrchidPink:#dc8cdb;
-$VibrantBlue:#0a58ca;
-$LightBlueGray:#f4f7fb;
-$LavenderSunsetGradient:linear-gradient(
-    -145deg,
-    rgba(219, 138, 222, 1) 0%,
-    rgba(246, 191, 159, 1) 100%
-  );
-  //font 
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
-  $font-family: 'Open Sans', sans-serif;
-  // primery shadow
-  $PrimeryShadow:0px 0px 15px rgba(0, 0, 0, 0.06);
+$Dark: black;
+$light: #fff;
+$SnowWhite: #fff;
+$PaleGray: #eeeeee;
+$LightGray: #eee;
+$DarkGray: #777777;
+$softLightGray: #dddddd;
+$OrchidPink: #dc8cdb;
+$VibrantBlue: #0a58ca;
+$LightBlueGray: #f4f7fb;
+$LavenderSunsetGradient: linear-gradient(
+  -145deg,
+  rgba(219, 138, 222, 1) 0%,
+  rgba(246, 191, 159, 1) 100%
+);
+
+
+//font
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+$font-family: "Open Sans", sans-serif;
+// primery shadow
+$PrimeryShadow: 0px 0px 15px rgba(0, 0, 0, 0.06);

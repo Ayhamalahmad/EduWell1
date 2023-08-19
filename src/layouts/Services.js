@@ -65,7 +65,7 @@ export default function Services({ boxesContainerRef }) {
     },
   ];
   return (
-    <>
+    <div className="container">
       <p className="p-head">Our Services</p>
       <h2 className="h2-head">
         Provided <span>Services</span>
@@ -87,44 +87,12 @@ export default function Services({ boxesContainerRef }) {
               </div>
             );
           })}
-          {/* <div className="box">
-          <img src={ert} />
-          <h3>Ready Target</h3>
-          <p>
-            Please tell your friends about the best CSS template website that is
-            TemplateMo.
-          </p>
-        </div>
-        <div className="box">
-          <img src={ert} />
-          <h3>Ready Target</h3>
-          <p>
-            Please tell your friends about the best CSS template website that is
-            TemplateMo.
-          </p>
-        </div>
-        <div className="box">
-          <img src={ert} />
-          <h3>Ready Target</h3>
-          <p>
-            Please tell your friends about the best CSS template website that is
-            TemplateMo.
-          </p>
-        </div>
-        <div className="box">
-          <img src={ert} />
-          <h3>Ready Target</h3>
-          <p>
-            Please tell your friends about the best CSS template website that is
-            TemplateMo.
-          </p>
-        </div> */}
         </div>
       </div>
 
       <div className="bullets">
         {BoxData.map((item, index) => (
-          <span
+          <span key={index}
             className={currentSlide === index ? "active" : null}
             onClick={() => setCurrentSlide(index)}
           >
@@ -133,6 +101,6 @@ export default function Services({ boxesContainerRef }) {
         ))}
       </div>
       {/* <Bullets /> */}
-    </>
+    </div>
   );
 }

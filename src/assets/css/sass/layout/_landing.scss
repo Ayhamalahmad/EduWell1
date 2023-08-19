@@ -17,6 +17,9 @@
       left: -10%;
       z-index: -1;
       top: 54%;
+      @media #{$minLarge} {
+      left: -15%;
+      }
     }
     &::after {
       content: "";

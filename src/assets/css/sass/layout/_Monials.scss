@@ -5,14 +5,16 @@
     .wrapper {
       display: flex;
       align-items: center;
-      overflow-x: scroll;
       scroll-behavior: smooth;
       transition: transform 0.3s ease-in-out;
       gap: 20px;
       padding: 60px 0;
+      -webkit-user-select: none;
       user-select: none;
-      &::-webkit-scrollbar {
-        display: none;
+      width: 25%;
+      margin: auto;
+      @media #{$maxMobile} {
+        width: 80%;
       }
       .item {
         transition: transform 0.3s ease-in-out;
@@ -21,11 +23,13 @@
         background-color: #fff;
         padding: 30px;
         border-radius: 15px;
+        filter: blur(1px);
         &:hover {
           box-shadow: $PrimeryShadow;
         }
         &.active {
           box-shadow: $PrimeryShadow;
+          filter: blur(0px);
         }
         p {
         }
